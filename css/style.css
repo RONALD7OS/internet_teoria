@@ -1,13 +1,8 @@
-
 h1 {
     color: blue;
     text-align: center;
 }
-san crispin {
-    font-size: 24px;
-    font-weight: bold;
-}
-p#parrafo {
+p.parrafo {
     color: purple;
     font-size: 20px;
 }
@@ -24,13 +19,12 @@ body {
     padding: 0;
 }
 img.logo {
-   margin: 20px;
+    margin: 20px;
     display: block;
-    clip-path: inset(10px 10px 10px 10px);
     clip-path: circle(50% at 50% 50%);
 }
 header {
-   background-color: #300428;
+    background-color: #300428;
     color: #fff;
     display: flex;
     align-items: center;
@@ -39,15 +33,113 @@ header {
 }
 nav {
     background-color: #f4f4f4;
+
     
 }
-nav.ul {
+nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    gap: 20px;
     padding: 0;
     margin: 0;
 }
+nav ul {
+    padding: 12px 15px;
+}
+nav a {
+    color: #300428;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #a9227e;
+}
 main {
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
+}
+
+
+section {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    border: 1px solid #e3c9dd;
+    border-radius: 12px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 420px;
+    margin-top: 20px;
+}
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #d8bcd0;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+}
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #300428;
+}
+form button {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #300428;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    width: fit-content;
+}
+form button:hover {
+    background-color: #a9227e;
+}
+
+footer {
+    background-color: #300428;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+@media (max-width: 600px) {
+ 
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+ 
+    main {
+        padding: 15px;
+    }
+ 
+    section {
+        padding: 18px 20px;
+        margin-bottom: 18px;
+    }
+ 
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+ 
+    form {
+        max-width: 100%;
+    }
 }
