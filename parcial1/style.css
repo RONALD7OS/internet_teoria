@@ -1,0 +1,72 @@
+.oculto¨{
+    display: none;
+}
+body{
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+nav{
+    background-color: #34495e;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+section{
+    padding: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+form{
+    margin-top: 20px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+#btn-confirmar{
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        margin: 5px 0;
+    }
+    
+}
+section {
+    padding: 20px;
+}
