@@ -19,7 +19,7 @@
             <li><a href="index.html">Productos</a></li>
             <li><a href="productos.html">Sobre nosotros</a></li>
             <li><a href="contacto.html">Contacto</a></li>
-            <button id="modo-oscuro-btn">
+            <button type="button" id="modo-oscuro-btn" class="modo-oscuro">
                 modo oscuro
             </button>
         </ul>
@@ -27,7 +27,7 @@
 
     <main>
 
-        <section id="productos">
+        <section id="productos" >
             <h2>Productos</h2>
             <p class="parrafo">Bienvenido a la página de Peladora de Trigo San Crispín, donde se entrega la mejor calidad
                 de grano 100% fiable.</p>
@@ -52,18 +52,19 @@
                 <li>Teléfono: 123456789</li>
                 <li>Correo: sancrispin@correo.com</li>
             </ul>
-
-            <form id="formulario-contacto" action="#" method="post">
+ <form id="formulario-contacto" action="#" method="post" novalidate>
                 <label for="nombre-cliente">Nombre:</label>
-                <input type="text" id="nombre-cliente" name="nombre-cliente" placeholder="nombre" required>
-
+                <input type="text" id="nombre-cliente" name="nombre-cliente" placeholder="Tu nombre" required>
+ 
                 <label for="correo-cliente">Correo:</label>
-                <input type="email" id="correo-cliente" name="correo-cliente" placeholder="@ejemplo.com" required>
-
+                <input type="email" id="correo-cliente" name="correo-cliente" placeholder="tucorreo@ejemplo.com" required>
+ 
                 <label for="mensaje-cliente">Mensaje:</label>
-                <textarea id="mensaje-cliente" name="mensaje-cliente" rows="4" placeholder="Escribe aqui plis" required></textarea>
-
+                <textarea id="mensaje-cliente" name="mensaje-cliente" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+ 
                 <button type="submit">Enviar</button>
+ 
+                <p id="aviso-contacto" class="aviso"></p>
             </form>
         </section>
 
