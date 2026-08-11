@@ -17,14 +17,13 @@ const avisoContacto = document.querySelector("#aviso-contacto");
  
 
 function revisarContacto(event) {
-
-    event.preventDefault();
  
    
     const nombre = document.querySelector("#nombre-cliente").value;
     const correo = document.querySelector("#correo-cliente").value;
  
     if (nombre === "") {
+         event.preventDefault();
     
         avisoContacto.textContent = "Falta tu nombre, caserito.";
         avisoContacto.classList.add("error");
