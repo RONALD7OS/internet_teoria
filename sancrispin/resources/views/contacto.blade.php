@@ -8,7 +8,7 @@
         <h2>Contacto</h2>
         <p class="parrafo">Para más información sobre nuestros productos y servicios contáctenos a través de los siguientes medios:</p>
         <ul>
-            <li>Teléfono: 123456789</li>
+            <li>Teléfono: 45756789</li>
             <li>Correo: sancrispin@correo.com</li>
         </ul>
 

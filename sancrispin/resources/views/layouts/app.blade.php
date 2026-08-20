@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('titulo', 'Peladora de Trigo San Crispín')</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
+
 <body>
 
     <header>
@@ -14,7 +16,9 @@
         <nav>
             <ul>
                 <li><a href="{{ route('inicio') }}">Inicio</a></li>
+                <li><a href="{{ route('productos') }}">Productos</a></li>
                 <li><a href="{{ route('contacto') }}">Contacto</a></li>
+
             </ul>
             <button id="modo-oscuro-btn">🌙 Modo oscuro</button>
         </nav>
@@ -31,4 +35,5 @@
 
     <script src="{{ asset('script.js') }}"></script>
 </body>
+
 </html>
